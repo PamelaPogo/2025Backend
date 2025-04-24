@@ -17,7 +17,7 @@ export class ProductsController {
          }
     
     @Post()
-    create (@Body() product: Product): Promise<Product> {
+    createProduct (@Body() product: Product): Promise<Product> {
         return this.productsService.create(product);
     }
 
